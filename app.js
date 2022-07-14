@@ -20,3 +20,21 @@ find_happy( 9 < 11);
 find_happy(true);
 find_happy(0 < 1);
 find_happy(0> 1);
+
+// Create a function that accepts 2 numbers as arguments and returns the larger of the 2 numbers
+
+function find_larger(num1, num2) {
+    if(num1 > num2) {
+        console.log(`num1: ${num1} is the bigger number`);
+        return num1;
+    } else if (num2 > num1) {
+        console.log(`num2: ${num2} is the bigger number`);
+        return num2;
+    }
+
+}
+
+find_larger( -1,1);
+find_larger(1000, -1111);
+find_larger(0, -1);
+find_larger(0.1111, 0.11111);
