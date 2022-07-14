@@ -38,3 +38,23 @@ find_larger( -1,1);
 find_larger(1000, -1111);
 find_larger(0, -1);
 find_larger(0.1111, 0.11111);
+
+// Create a function that accepts an array of numbers and returns the largest numner in the array
+
+function find_biggest (array_numbers){
+    for(let counter = 0; counter < array_numbers.length; counter++) {
+        let biggest = array_numbers[counter];
+        if (biggest > array_numbers[counter+1]) {
+            biggest = array_numbers[counter];
+            
+        } else if (array_numbers[counter+1]>biggest) {
+            biggest = array_numbers[counter+1];
+            
+        }
+        return biggest;
+    }
+          
+}
+
+
+find_biggest([2,5,333,3, -1,999]);
